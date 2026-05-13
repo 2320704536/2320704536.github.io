@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wang Xinru Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #07111f, #111827);
+      color: #f8f3e8;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 10%;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #1f2937);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    header h2 {
+      color: #d4af37;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      color: #d1d5db;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: #0b1628;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    nav a {
+      color: #f8f3e8;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #d4af37;
+      margin-bottom: 25px;
+      border-left: 5px solid #d4af37;
+      padding-left: 15px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 18px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #d1d5db;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #d4af37;
+      color: #07111f;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #d4af37;
+      color: #07111f;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #facc15;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #06101f;
+      color: #9ca3af;
+      border-top: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wang Xinru</h1>
+    <h2>Film, Data & Creative Technology Portfolio</h2>
+    <p>
+      I am interested in film, visual media, and data analysis. 
+      This portfolio presents my creative and data-related projects, including my final project 
+      CineStats — Film Festival Analytics.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>
+        Hello, my name is Wang Xinru. I am studying Arts and Big Data at Sungkyunkwan University.
+        I am interested in combining visual media, film, design, and data analysis. 
+        I enjoy creating projects that present information in a clear, visual, and interactive way.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+      <h3>🎬 CineStats — Film Festival Analytics</h3>
+      <p>
+        CineStats is a Streamlit movie data dashboard using real-time TMDb data. 
+        It explores popular movies, top-rated films, directors, ratings, genres, popularity, 
+        and movie trends through interactive charts, tables, filters, search functions, and CSV export.
+      </p>
+      <a class="button" href="#" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>📊 Film Data Dashboard</h3>
+      <p>
+        A data visualization project that connects film-related topics with analytics. 
+        It focuses on making movie information easier to understand through charts and structured data.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Creative Media Projects</h3>
+      <p>
+        I am also interested in visual storytelling, film production, and design. 
+        My creative work explores how images, sound, and data can be used to communicate ideas.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Streamlit</div>
+      <div class="skill">Pandas</div>
+      <div class="skill">Plotly</div>
+      <div class="skill">HTML</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Data Visualization</div>
+      <div class="skill">Film Analysis</div>
+      <div class="skill">Visual Design</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <p>Email: wxr2320704536@gmail.com</p>
+      <p>GitHub: 2320704536</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Wang Xinru | Arts and Big Data Portfolio</p>
+  </footer>
+
+</body>
+</html>
